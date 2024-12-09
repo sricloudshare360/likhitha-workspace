@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even Checker</title>
+</head>
+<body>
+    <h2>Random Number Odd or Even Checker</h2>
+    <button onclick="checkNumber()">Generate Random Number</button>
+    <p id="result"></p>
+    <script>
+        function checkNumber() {
+            let number = Math.floor(Math.random() * 100) + 1;
+            let message = number + " is " + (number % 2 === 0 ? "Even" : "Odd");
+            document.getElementById("result").innerText = message;
+        }
+    </script>
+</body>
+</html>
